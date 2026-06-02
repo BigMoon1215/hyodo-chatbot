@@ -6,7 +6,7 @@ print("static 위치:", os.path.abspath("static"))
 
 from flask import Flask, request, jsonify, render_template
 from dotenv import load_dotenv
-import google.generativeai as genai
+from google import genai
 
 load_dotenv()
 
