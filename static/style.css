@@ -1,0 +1,155 @@
+/* 어르신의 눈높이에 맞춘 일관된 맑고 굵은 한글 서체 */
+
+body {
+
+    font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+
+    background-color: #f3f7fa;
+
+    -webkit-tap-highlight-color: transparent;
+
+    transition: font-size 0.15s ease-in-out;
+
+}
+
+
+
+/* 터치가 둔한 어르신의 클릭 오터치를 예방하기 위한 2x2 카드 스케일 효과 */
+
+.big-menu-card {
+
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+
+}
+
+.big-menu-card:active {
+
+    transform: scale(0.95);
+
+}
+
+
+
+/* ========================================================
+
+   [1. 보통 크기 테마] 어르신 기본 텍스트 폰트 조절 수식
+
+   ======================================================== */
+
+.size-normal {
+
+    font-size: 1.15rem; /* 기본 브라우저보다 훨씬 시원하게 설계 */
+
+}
+
+.size-normal h1 {
+
+    font-size: 1.75rem !important;
+
+}
+
+.size-normal h2 {
+
+    font-size: 1.35rem !important;
+
+}
+
+.size-normal p {
+
+    font-size: 1.05rem !important;
+
+}
+
+.size-normal button,
+
+.size-normal input,
+
+.size-normal select {
+
+    font-size: 1.15rem !important;
+
+}
+
+
+
+/* ========================================================
+
+   [2. 더 크게 보기 테마] 침침한 눈에 일목요연하게 폰트가 일률적으로 확장됨
+
+   ======================================================== */
+
+.size-large {
+
+    font-size: 1.45rem; /* 전 영역 대폭 확대 */
+
+}
+
+.size-large h1 {
+
+    font-size: 2.15rem !important;
+
+}
+
+.size-large h2 {
+
+    font-size: 1.7rem !important;
+
+}
+
+.size-large p {
+
+    font-size: 1.3rem !important;
+
+}
+
+.size-large button,
+
+.size-large input,
+
+.size-large select {
+
+    font-size: 1.35rem !important;
+
+}
+
+
+
+/* ========================================================
+
+   알람 발생 시 전체 화면에 시각적 알림을 깜빡여주는 연쇄 모션
+
+   ======================================================== */
+
+@keyframes pulse-red {
+
+    0%, 100% {
+
+        background-color: rgba(239, 68, 68, 0.95);
+
+    }
+
+    50% {
+
+        background-color: rgba(185, 28, 28, 0.8);
+
+    }
+
+}
+
+
+
+.alarm-active-bg {
+
+    animation: pulse-red 1.2s infinite;
+
+} 
+
+#chat-window {
+    scroll-behavior: smooth;
+}
+
+#chat-window .bg-yellow-100,
+#chat-window .bg-blue-50 {
+    width: fit-content;
+    word-break: keep-all;
+}
